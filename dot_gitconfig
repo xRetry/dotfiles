@@ -1,0 +1,7 @@
+[user]
+	email = marcoschwarz.at@gmail.com
+	name = xRetry
+[credential]
+	helper = store
+[core]
+    editor = nvim
