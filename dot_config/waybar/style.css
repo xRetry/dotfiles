@@ -96,7 +96,7 @@ button:hover {
 #pulseaudio,
 #tray,
 #mode {
-    padding: 0 10px;
+    padding: 0 7px;
     color: #cdcecf;
 }
 
@@ -172,6 +172,7 @@ label:focus {
 #network {
     background-color: #39506d;
 }
+    
 
 #pulseaudio {
     background-color: #29394f;
@@ -193,3 +194,16 @@ label:focus {
     background-color: #29394f;
 }
 
+/* Hover effect on clickable elements */
+/* TODO: Fix */
+
+#network, 
+#pulseaudio {
+    box-shadow: inset 0 -3px transparent;
+}
+
+#network:active,
+#pulseaudio:hover {
+    border-bottom: 3px solid #719cd6;
+    color: #121212
+}

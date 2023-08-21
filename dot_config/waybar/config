@@ -35,28 +35,29 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%)",
+        "format-wifi": "[N] {essid} ({signalStrength}%)",
         "format-ethernet": "{ipaddr}/{cidr}",
-        "tooltip-format": "{ifname} via {gwaddr}",
+        "tooltip-format": "{ifname} - {gwaddr}",
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "[N] Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "[V] {icon}-{volume}% {format_source}",
-        "format-bluetooth": "[V] {icon}-{volume}% {format_source}",
-        "format-bluetooth-muted": "[V] {icon}-{format_source}",
-        "format-muted": "[V] {format_source}",
-        "format-source": "[V] {volume}%",
+        "format": "[V] {icon}{volume}%{format_source}",
+        "format-bluetooth": "",
+        "format-bluetooth-muted": "M",
+        "format-muted": "[V] M",
+        "format-source": "",
         "format-source-muted": "M",
         "format-icons": {
-            "headphone": "hp",
-            "hands-free": "hf",
-            "headset": "hs",
-            "phone": "ph",
-            "portable": "po",
-            "car": "ca",
+            "headphone": "hp:",
+            "hands-free": "hf:",
+            "headset": "hs:",
+            "phone": "ph:",
+            "portable": "po:",
+            "car": "ca:",
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
